@@ -17,6 +17,7 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#personal">Personal</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -52,18 +53,26 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Your Degree</h3>
-                        <p class="institution">Your University</p>
-                        <p class="date">Year - Year</p>
-                        <p>Brief description of your studies, major achievements, or relevant coursework.</p>
+                        <h3>Graduate Student-at-Large Bridge Program</h3>
+                        <p class="institution">The University of Chicago</p>
+                        <p class="date">September 2024 – March 2025</p>
+                        <p>Non-degree program for advanced graduate coursework.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Previous Degree</h3>
-                        <p class="institution">Previous Institution</p>
-                        <p class="date">Year - Year</p>
-                        <p>Description of earlier education and accomplishments.</p>
+                        <h3>Master of Science in Statistics</h3>
+                        <p class="institution">Purdue University, West Lafayette, IN</p>
+                        <p class="date">August 2022 – May 2024</p>
+                        <p>Graduate studies in statistical theory and methods.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Bachelor of Economics in Statistics</h3>
+                        <p class="institution">Korea University, Seoul, South Korea</p>
+                        <p class="date">March 2017 – August 2022</p>
+                        <p>Primary major in Statistics with Financial Engineering Interdisciplinary Program. Coursework spanning Mathematics, Economics, Business, and Industrial Engineering.</p>
                     </div>
                 </div>
             </div>
@@ -73,33 +82,97 @@
     <!-- Research Section -->
     <section id="research" class="section">
         <div class="container">
-            <h2 class="section-title">Research Projects</h2>
+            <h2 class="section-title">Research</h2>
+            <p class="research-intro">Research Professional at University of Chicago Booth School of Business (July 2024 – Present), working with Professors Giovanni Compiani and Avner Strulov-Shlain.</p>
+
+            <h3 class="research-category">Projects with Professor Giovanni Compiani</h3>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Research Project Title 1</h3>
-                    <p class="project-meta">Institution/Lab | Year</p>
-                    <p>Description of your research project, including objectives, methodology, and key findings. Highlight the impact and significance of your work.</p>
+                    <h3>Demand Estimation with Text and Image Data</h3>
+                    <p class="project-meta">Working Paper | Co-authors: Ilya Morozov, Stephan Seiler</p>
+                    <p>Built estimation pipeline for mixed logit models with random coefficients using MLE. Applied PCA to reduce dimensionality of text and image embeddings from deep learning models (VGG19, ResNet50, USE). Performed model selection using AIC with robustness checks via BIC and cross-validation.</p>
                     <div class="project-tags">
+                        <span class="tag">Demand Estimation</span>
                         <span class="tag">Machine Learning</span>
-                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Mixed Logit</span>
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3>Research Project Title 2</h3>
-                    <p class="project-meta">Institution/Lab | Year</p>
-                    <p>Another research project description. Include details about your role, contributions, and outcomes. Mention any publications or presentations.</p>
+                    <h3>Inference for Multi-product Demand with Text and Image Data</h3>
+                    <p class="project-meta">Working Paper | Co-authors: Timothy Christensen</p>
+                    <p>Processed Nielsen scanner data to identify suitable product categories. Integrated Syndigo data for nutritional information. Constructed consumer choice panels and calculated price elasticities using developed econometric framework.</p>
                     <div class="project-tags">
-                        <span class="tag">Computer Vision</span>
-                        <span class="tag">Deep Learning</span>
+                        <span class="tag">NielsenIQ Data</span>
+                        <span class="tag">Econometrics</span>
+                        <span class="tag">Demand Analysis</span>
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3>Research Project Title 3</h3>
-                    <p class="project-meta">Institution/Lab | Year</p>
-                    <p>Describe additional research work, collaborative projects, or ongoing investigations. Emphasize your unique contributions and innovations.</p>
+                    <h3>Measuring Substitution Patterns for Environmentally Friendly Products</h3>
+                    <p class="project-meta">Work in Progress | Co-author: Steve Berry</p>
+                    <p>Developed data processing pipeline for Nielsen data to classify meat and alternative meat products. Engineered hedonic price indices using fixed effects regression. Constructed balanced household-week panel (4.9M observations) for demand estimation.</p>
                     <div class="project-tags">
-                        <span class="tag">Natural Language Processing</span>
-                        <span class="tag">AI</span>
+                        <span class="tag">Environmental Economics</span>
+                        <span class="tag">Panel Data</span>
+                        <span class="tag">Price Indices</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Quantity Surcharging</h3>
+                    <p class="project-meta">Work in Progress | Co-authors: Jean-Pierre Dubé, Joonhwi Joo</p>
+                    <p>Refactored estimation pipeline to xlogit library. Performed structural demand estimation using naive and flexible logit methods with 500 bootstrap replications across multiple robustness specifications to test consumer price inattention.</p>
+                    <div class="project-tags">
+                        <span class="tag">Structural Estimation</span>
+                        <span class="tag">Behavioral Economics</span>
+                        <span class="tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="research-category">Projects with Professor Avner Strulov-Shlain</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Choice Architecture, Privacy Valuations, and Selection in Consumer Data</h3>
+                    <p class="project-meta">Published in Marketing Science, 2025 | Co-author: Tesary Lin</p>
+                    <p>Organized and documented full replication package by verifying all results through re-running GRF models (multi-arm causal forests and survival forests), Tobit regressions, supply-curve estimations, and counterfactual simulations.</p>
+                    <div class="project-tags">
+                        <span class="tag">Privacy</span>
+                        <span class="tag">Causal Forests</span>
+                        <span class="tag">Choice Experiments</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Loss-Leader Pricing and Complementarity: Evidence from Gas Stations</h3>
+                    <p class="project-meta">Working Paper | Co-authors: Hung Ho, Andreas Kraft</p>
+                    <p>Engineered robust data pipeline to process ~1.4TB unstructured Skupos streaming data on Mercury/SLURM. Built comprehensive analytical panels and implemented multi-arm causal forest to estimate heterogeneous treatment effects of cash discounts on store revenue.</p>
+                    <div class="project-tags">
+                        <span class="tag">Big Data</span>
+                        <span class="tag">Causal Inference</span>
+                        <span class="tag">HPC</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>The Dynamics of Following Defaults</h3>
+                    <p class="project-meta">Working Paper | Co-authors: R. Heimer, Alex Imas</p>
+                    <p>Built interactive trading platform in Qualtrics using custom JavaScript with real-time portfolio management, dynamic price updates, trade validation, and comprehensive state persistence. Engineered experimental design to measure default effects and self-attribution.</p>
+                    <div class="project-tags">
+                        <span class="tag">Behavioral Finance</span>
+                        <span class="tag">Experimental Design</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="research-category">Previous Research</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Post-Viewing Mobility Behavior After Film Exposure</h3>
+                    <p class="project-meta">Purdue University Daniels School of Business | Supervisors: Federico Rossi, Ting Zhu</p>
+                    <p>Cleaned GPS data of the Chicago Metropolitan Area and integrated theater geolocation coordinates with daily screening schedules. Performed difference-in-differences analysis to compare mobility patterns, investigating the effect of film exposure on post-viewing movement behavior.</p>
+                    <div class="project-tags">
+                        <span class="tag">GPS Data</span>
+                        <span class="tag">Difference-in-Differences</span>
+                        <span class="tag">Mobility Analysis</span>
                     </div>
                 </div>
             </div>
@@ -115,44 +188,77 @@
                     <h3>Programming Languages</h3>
                     <ul>
                         <li>Python</li>
+                        <li>R</li>
+                        <li>Stata</li>
                         <li>JavaScript</li>
-                        <li>Java</li>
-                        <li>C++</li>
+                        <li>SQL</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Tools & Technologies</h3>
                     <ul>
-                        <li>TensorFlow/PyTorch</li>
                         <li>Git/GitHub</li>
-                        <li>Docker</li>
-                        <li>Cloud Platforms (AWS/GCP)</li>
+                        <li>SLURM/HPC (Mercury)</li>
+                        <li>Qualtrics</li>
+                        <li>LaTeX</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Research Areas</h3>
+                    <h3>Research Methods</h3>
                     <ul>
+                        <li>Structural Econometrics</li>
+                        <li>Causal Inference</li>
                         <li>Machine Learning</li>
-                        <li>Data Science</li>
-                        <li>Computer Vision</li>
-                        <li>Natural Language Processing</li>
+                        <li>Demand Estimation</li>
+                        <li>Experimental Design</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Soft Skills</h3>
+                    <h3>Data & Analysis</h3>
                     <ul>
-                        <li>Research & Analysis</li>
-                        <li>Technical Writing</li>
-                        <li>Presentation</li>
-                        <li>Collaboration</li>
+                        <li>NielsenIQ (RMS/HMS)</li>
+                        <li>Panel Data Analysis</li>
+                        <li>Big Data Processing</li>
+                        <li>Data Visualization</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Personal Section -->
+    <section id="personal" class="section">
+        <div class="container">
+            <h2 class="section-title">Outside of Research</h2>
+            <p class="personal-intro">When I'm not analyzing data or running models, here's what I enjoy!</p>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-image-placeholder">
+                        <span>Photo coming soon</span>
+                    </div>
+                    <h3>Hobby 1</h3>
+                    <p>Add a description of your hobby here.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-image-placeholder">
+                        <span>Photo coming soon</span>
+                    </div>
+                    <h3>Hobby 2</h3>
+                    <p>Add a description of your hobby here.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-image-placeholder">
+                        <span>Photo coming soon</span>
+                    </div>
+                    <h3>Hobby 3</h3>
+                    <p>Add a description of your hobby here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <div class="contact-content">
@@ -178,7 +284,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Celina Hyunsoo Park. All rights reserved.</p>
+            <p>&copy; 2025 Celina Hyunsoo Park. All rights reserved.</p>
         </div>
     </footer>
 
