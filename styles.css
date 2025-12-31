@@ -316,6 +316,78 @@ body {
     left: 0;
 }
 
+/* Research Section */
+.research-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: var(--text-color);
+}
+
+.research-category {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Personal/Hobbies Section */
+.personal-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: var(--text-color);
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.hobby-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hobby-card h3 {
+    color: var(--primary-color);
+    padding: 1rem 1.5rem 0.5rem;
+    font-size: 1.3rem;
+}
+
+.hobby-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--text-color);
+}
+
+.hobby-image-placeholder {
+    background-color: var(--light-bg);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-style: italic;
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 /* Contact Section */
 .contact-content {
     max-width: 600px;
