@@ -12,8 +12,11 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Celina Hyunsoo Park - Personal Portfolio">
+    <meta name="description" content="Celina Hyunsoo Park - Research Professional at University of Chicago Booth School of Business">
     <title>Celina Hyunsoo Park</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -35,11 +38,17 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Celina Hyunsoo Park</h1>
-            <p class="subtitle">Researcher | Developer | Innovator</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                <a href="#research" class="btn btn-secondary">View Research</a>
+            <div class="hero-content">
+                <h1>Celina Hyunsoo Park</h1>
+                <p class="subtitle">Research Professional at UChicago Booth</p>
+                <div class="hero-buttons">
+                    <a href="#research">View Research</a>
+                    <a href="#contact">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <span class="hero-photo-placeholder">Photo</span>
+                <!-- Replace with: <img src="images/profile.jpg" alt="Celina Hyunsoo Park"> -->
             </div>
         </div>
     </section>
@@ -47,7 +56,7 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">About</h2>
             <div class="about-content">
                 <p>I am a Research Professional at the University of Chicago Booth School of Business, working with Professors Giovanni Compiani and Avner Strulov-Shlain. My research focuses on product differentiation, behavioral economics, and industrial organization, with applications in grocery and digital markets.</p>
                 <p>I am particularly interested in how firms strategically use product attributes—such as "sugar-free" or "organic" labels—to differentiate offerings and extract price premiums, and how consumer willingness to pay for these features varies across categories and demographics. Methodologically, I use structural econometrics, causal inference, and machine learning to analyze both traditional and unstructured data sources.</p>
@@ -59,30 +68,22 @@
     <section id="education" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Graduate Student-at-Large Bridge Program</h3>
-                        <p class="institution">The University of Chicago</p>
-                        <p class="date">September 2024 – March 2025</p>
-                        <p>Non-degree program for advanced graduate coursework.</p>
-                    </div>
+            <div class="education-list">
+                <div class="education-item">
+                    <h3>Graduate Student-at-Large Bridge Program</h3>
+                    <p class="institution">The University of Chicago</p>
+                    <p class="date">September 2024 – March 2025</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Master of Science in Statistics</h3>
-                        <p class="institution">Purdue University, West Lafayette, IN</p>
-                        <p class="date">August 2022 – May 2024</p>
-                        <p>Graduate studies in statistical theory and methods.</p>
-                    </div>
+                <div class="education-item">
+                    <h3>Master of Science in Statistics</h3>
+                    <p class="institution">Purdue University, West Lafayette, IN</p>
+                    <p class="date">August 2022 – May 2024</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Bachelor of Economics in Statistics</h3>
-                        <p class="institution">Korea University, Seoul, South Korea</p>
-                        <p class="date">March 2017 – August 2022</p>
-                        <p>Primary major in Statistics with Financial Engineering Interdisciplinary Program. Coursework spanning Mathematics, Economics, Business, and Industrial Engineering.</p>
-                    </div>
+                <div class="education-item">
+                    <h3>Bachelor of Economics in Statistics</h3>
+                    <p class="institution">Korea University, Seoul, South Korea</p>
+                    <p class="date">March 2017 – August 2022</p>
+                    <p>Financial Engineering Interdisciplinary Program. Coursework in Mathematics, Economics, Business, and Industrial Engineering.</p>
                 </div>
             </div>
         </div>
@@ -95,8 +96,8 @@
             <p class="research-intro">Research Professional at University of Chicago Booth School of Business (July 2024 – Present), working with Professors Giovanni Compiani and Avner Strulov-Shlain.</p>
 
             <h3 class="research-category">Projects with Professor Giovanni Compiani</h3>
-            <div class="projects-grid">
-                <div class="project-card">
+            <div class="projects-list">
+                <div class="project-item">
                     <h3>Demand Estimation with Text and Image Data</h3>
                     <p class="project-meta">Working Paper | Co-authors: Ilya Morozov, Stephan Seiler</p>
                     <p>Built estimation pipeline for mixed logit models with random coefficients using MLE. Applied PCA to reduce dimensionality of text and image embeddings from deep learning models (VGG19, ResNet50, USE). Performed model selection using AIC with robustness checks via BIC and cross-validation.</p>
@@ -106,7 +107,7 @@
                         <span class="tag">Mixed Logit</span>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-item">
                     <h3>Inference for Multi-product Demand with Text and Image Data</h3>
                     <p class="project-meta">Working Paper | Co-authors: Timothy Christensen</p>
                     <p>Processed Nielsen scanner data to identify suitable product categories. Integrated Syndigo data for nutritional information. Constructed consumer choice panels and calculated price elasticities using developed econometric framework.</p>
@@ -116,7 +117,7 @@
                         <span class="tag">Demand Analysis</span>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-item">
                     <h3>Measuring Substitution Patterns for Environmentally Friendly Products</h3>
                     <p class="project-meta">Work in Progress | Co-author: Steve Berry</p>
                     <p>Developed data processing pipeline for Nielsen data to classify meat and alternative meat products. Engineered hedonic price indices using fixed effects regression. Constructed balanced household-week panel (4.9M observations) for demand estimation.</p>
@@ -126,7 +127,7 @@
                         <span class="tag">Price Indices</span>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-item">
                     <h3>Quantity Surcharging</h3>
                     <p class="project-meta">Work in Progress | Co-authors: Jean-Pierre Dubé, Joonhwi Joo</p>
                     <p>Refactored estimation pipeline to xlogit library. Performed structural demand estimation using naive and flexible logit methods with 500 bootstrap replications across multiple robustness specifications to test consumer price inattention.</p>
@@ -139,8 +140,8 @@
             </div>
 
             <h3 class="research-category">Projects with Professor Avner Strulov-Shlain</h3>
-            <div class="projects-grid">
-                <div class="project-card">
+            <div class="projects-list">
+                <div class="project-item">
                     <h3>Choice Architecture, Privacy Valuations, and Selection in Consumer Data</h3>
                     <p class="project-meta">Published in Marketing Science, 2025 | Co-author: Tesary Lin</p>
                     <p>Organized and documented full replication package by verifying all results through re-running GRF models (multi-arm causal forests and survival forests), Tobit regressions, supply-curve estimations, and counterfactual simulations.</p>
@@ -150,7 +151,7 @@
                         <span class="tag">Choice Experiments</span>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-item">
                     <h3>Loss-Leader Pricing and Complementarity: Evidence from Gas Stations</h3>
                     <p class="project-meta">Working Paper | Co-authors: Hung Ho, Andreas Kraft</p>
                     <p>Engineered robust data pipeline to process ~1.4TB unstructured Skupos streaming data on Mercury/SLURM. Built comprehensive analytical panels and implemented multi-arm causal forest to estimate heterogeneous treatment effects of cash discounts on store revenue.</p>
@@ -160,7 +161,7 @@
                         <span class="tag">HPC</span>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-item">
                     <h3>The Dynamics of Following Defaults</h3>
                     <p class="project-meta">Working Paper | Co-authors: R. Heimer, Alex Imas</p>
                     <p>Built interactive trading platform in Qualtrics using custom JavaScript with real-time portfolio management, dynamic price updates, trade validation, and comprehensive state persistence. Engineered experimental design to measure default effects and self-attribution.</p>
@@ -173,8 +174,8 @@
             </div>
 
             <h3 class="research-category">Previous Research</h3>
-            <div class="projects-grid">
-                <div class="project-card">
+            <div class="projects-list">
+                <div class="project-item">
                     <h3>Post-Viewing Mobility Behavior After Film Exposure</h3>
                     <p class="project-meta">Purdue University Daniels School of Business | Supervisors: Federico Rossi, Ting Zhu</p>
                     <p>Cleaned GPS data of the Chicago Metropolitan Area and integrated theater geolocation coordinates with daily screening schedules. Performed difference-in-differences analysis to compare mobility patterns, investigating the effect of film exposure on post-viewing movement behavior.</p>
@@ -194,7 +195,7 @@
             <h2 class="section-title">Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <h3>Programming</h3>
                     <ul>
                         <li>Python</li>
                         <li>R</li>
@@ -204,16 +205,16 @@
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
+                    <h3>Tools</h3>
                     <ul>
-                        <li>Git/GitHub</li>
-                        <li>SLURM/HPC (Mercury)</li>
+                        <li>Git / GitHub</li>
+                        <li>SLURM / HPC</li>
                         <li>Qualtrics</li>
                         <li>LaTeX</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Research Methods</h3>
+                    <h3>Methods</h3>
                     <ul>
                         <li>Structural Econometrics</li>
                         <li>Causal Inference</li>
@@ -223,7 +224,7 @@
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Data & Analysis</h3>
+                    <h3>Data</h3>
                     <ul>
                         <li>NielsenIQ (RMS/HMS)</li>
                         <li>Panel Data Analysis</li>
@@ -271,20 +272,20 @@
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <div class="contact-content">
-                <p>I'm always open to discussing new projects, opportunities, or collaborations. Feel free to reach out!</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>Personal Email:</strong> hyunsoopark2023@gmail.com
-                    </div>
-                    <div class="contact-item">
-                        <strong>Booth Email:</strong> celina.park@chicagobooth.edu
-                    </div>
-                    <div class="contact-item">
-                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hyun-soo-park/" target="_blank">www.linkedin.com/in/hyun-soo-park</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>GitHub:</strong> <a href="https://github.com/celina-hyunsoo-park" target="_blank">github.com/celina-hyunsoo-park</a>
-                    </div>
+                <p>I'm always open to discussing research, collaborations, or opportunities.</p>
+                <div class="contact-links">
+                    <a href="mailto:hyunsoopark2023@gmail.com" class="contact-link">
+                        <span class="contact-label">Personal</span> hyunsoopark2023@gmail.com
+                    </a>
+                    <a href="mailto:celina.park@chicagobooth.edu" class="contact-link">
+                        <span class="contact-label">Booth</span> celina.park@chicagobooth.edu
+                    </a>
+                    <a href="https://www.linkedin.com/in/hyun-soo-park/" target="_blank" class="contact-link">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/celina-hyunsoo-park" target="_blank" class="contact-link">
+                        GitHub
+                    </a>
                 </div>
             </div>
         </div>
@@ -293,7 +294,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Celina Hyunsoo Park. All rights reserved.</p>
+            <p>&copy; 2025 Celina Hyunsoo Park</p>
         </div>
     </footer>
 
